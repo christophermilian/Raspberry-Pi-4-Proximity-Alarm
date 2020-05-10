@@ -8,7 +8,7 @@ Completed:
 #pragma region Includes
 #include <stdio.h>
 #include <stdlib.h>
-#include <wiringpi.h>
+#include <wiringPi.h>
 #include <pcf8574.h>
 #include <lcd.h>
 #include <softTone.h>
