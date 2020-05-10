@@ -101,7 +101,7 @@ void printTooClose(){  // Displays "Too Close!" on LCD
 }
 
 void printGuarding(){  // Displays "Guarding.." on LCD
-    digitalWrite(LED,HIGH);
+    //digitalWrite(LED,HIGH);
     lcdPosition(lcdhd,0,0);  // Set the LCD cursor position to (0,0)
     lcdPrintf(lcdhd,"Guarding..");  // Display on LCD
     
