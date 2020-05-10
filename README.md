@@ -1,4 +1,4 @@
-# Displaying distance data from an ultrasonic sensor onto a LCD with C and a Raspberry Pi 4.
+# Sounding an alarm if an object comes too close and then displaying "Too Close!" onto a LCD. Coded with C and a Raspberry Pi 4.
 A project that sounds an alarm if on object comes too close and then displays "Too Close!" on a LCD. 
 For GPIO pin mapping, I used WiringPi (Made by Gordon Henderson under GNU-LGPL) to simplify. Link: http://wiringpi.com/
 
