@@ -101,7 +101,7 @@ void printTooClose(){  // Displays "Too Close!" on LCD
 }
 
 void printGuarding(){  // Displays "Guarding.." on LCD
-    //digitalWrite(LED,HIGH);
+    digitalWrite(LED,HIGH);
     lcdPosition(lcdhd,0,0);  // Set the LCD cursor position to (0,0)
     lcdPrintf(lcdhd,"Guarding..");  // Display on LCD
     
@@ -153,7 +153,7 @@ int main(void){
 		}
 		else {  // No object detected
 			stopAlertor(buzzerPin);   // Turn off buzzer
-            digitalWrite(LED,LOW);
+            //digitalWrite(LED,LOW);
 			printGuarding();
             printf("Watching %.2fcm from the Pi.\n", distance);
 		}
