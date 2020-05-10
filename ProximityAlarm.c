@@ -153,7 +153,6 @@ int main(void){
 		}
 		else {  // No object detected
 			stopAlertor(buzzerPin);   // Turn off buzzer
-            //digitalWrite(LED,LOW);
 			printGuarding();
             printf("Watching %.2fcm from the Pi.\n", distance);
 		}
