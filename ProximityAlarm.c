@@ -2,7 +2,7 @@
 Made by: Christopher Milian 
 Purpose: To sound an alarm when on object gets too close, then display "Too Close! on the LCD. 
 Started: 5/9/2020
-Completed: 
+Completed: 5/10/2020
 */
 
 #pragma region Includes

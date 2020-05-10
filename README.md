@@ -18,6 +18,13 @@ For more details visit http://wiringpi.com/download-and-install/
 To upgrade, visit http://wiringpi.com/wiringpi-updated-to-2-52-for-the-raspberry-pi-4b/
 
 Hardware components used:
+- (1) HC-SR04 
+- (1) Buzzer
+- (1) I2C LCD1602 Module
+- (1) 1k Ohm Resistor
+- (8) Male to Female Cables
+- (6) Male to Male Jumper Cables
+- (1) NPN transistor (S8050) 
 - (1) Breadboard
 - Raspberry Pi 4B Rev. 1.2
 
