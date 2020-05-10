@@ -147,7 +147,8 @@ int main(void){
     }
 
     while (1){
-
+        
+        float distance = 0;
         if(distance < 20){ // Object too close
 			startAlertor(buzzerPin);   // Turn on buzzer
 			printTooClose();
