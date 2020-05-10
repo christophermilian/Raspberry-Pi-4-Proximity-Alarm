@@ -24,8 +24,8 @@ Hardware components used:
 When compiling the code, run the following commands in terminal at the location of the file:
 ```
 sudo bash
-gcc blank.c -o blank -lwiringPi -lm -lpthread
-./blank
+gcc ProximityAlarm.c -o ProximityAlarm -lwiringPi -lm -lpthread -lwiringPiDev
+./ProximityAlarm
 ```
 This project was possible through an electronics kit I purchased from Freenove that provided me with all of the components I used. 
 If interested, it is the "Freenove Ultrasonic Starter Kit for Raspberry Pi" (FNK0024).
