@@ -95,19 +95,15 @@ float getSonar(){  // Calculate distance of ultrasonic module in centimeters
 }
 
 void printTooClose(){  // Displays "Too Close!" on LCD
-    float distance = 0;
-    distance = getSonar();
     lcdPosition(lcdhd,0,0);  // Set the LCD cursor position to (0,0)
     lcdPrintf(lcdhd,"Too Close!");  // Display on LCD
-    printf("You are %.2fcm from the Pi.\n", distance);
+    
 }
 
 void printGuarding(){  // Displays "Guarding.." on LCD
-    float distance = 0;
-    distance = getSonar();
     lcdPosition(lcdhd,0,1);  // Set the LCD cursor position to (0,1)
     lcdPrintf(lcdhd,"Guarding..");  // Display on LCD
-    printf("You are %.2fcm from the Pi.\n", distance);
+    
 }
 
 int main(void){
@@ -118,7 +114,7 @@ int main(void){
     // Buzzer Setup
     pinMode(buzzerPin, OUTPUT); 
     softToneCreate(buzzerPin); //set buzzerPin
-    
+
     #pragma endregion Buzzer Setup
 
     #pragma region LCD Setup
@@ -146,15 +142,18 @@ int main(void){
     }
 
     while (1){
-
+        
         float distance = 0;
+        distance = getSonar();
         if(distance < 20){ // Object too close
 			startAlertor(buzzerPin);   // Turn on buzzer
 			printTooClose();
+            printf("You are %.2fcm from the Pi.\n", distance);
 		}
 		else {  // No object detected
 			stopAlertor(buzzerPin);   // Turn off buzzer
 			printGuarding();
+            printf("Watching %.2fcm from the Pi.\n", distance);
 		}
     }
     return 0;

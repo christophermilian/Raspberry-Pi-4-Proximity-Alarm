@@ -24,7 +24,7 @@ Hardware components used:
 When compiling the code, run the following commands in terminal at the location of the file:
 ```
 sudo bash
-gcc blank.c -o blank -lwiringPi -lw -lpthread
+gcc blank.c -o blank -lwiringPi -lm -lpthread
 ./blank
 ```
 This project was possible through an electronics kit I purchased from Freenove that provided me with all of the components I used. 
