@@ -117,9 +117,8 @@ int main(void){
     #pragma region Buzzer Setup
     // Buzzer Setup
     pinMode(buzzerPin, OUTPUT); 
-	pinMode(buttonPin, INPUT);
     softToneCreate(buzzerPin); //set buzzerPin
-	    //pullUpDnControl(buttonPin, PUD_UP);  //pull up to HIGH level
+    
     #pragma endregion Buzzer Setup
 
     #pragma region LCD Setup
@@ -147,7 +146,7 @@ int main(void){
     }
 
     while (1){
-        
+
         float distance = 0;
         if(distance < 20){ // Object too close
 			startAlertor(buzzerPin);   // Turn on buzzer
