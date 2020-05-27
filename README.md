@@ -1,5 +1,5 @@
 # Sounding an alarm if an object comes too close and then displaying "Too Close!" onto a LCD. Coded with C and a Raspberry Pi 4.
-A project that sounds an alarm if on object comes too close and then displays "Too Close!" on a LCD. 
+A project that sounds an alarm if an object comes too close and then displays "Too Close!" on an LCD. 
 For GPIO pin mapping, I used WiringPi (Made by Gordon Henderson under GNU-LGPL) to simplify. Link: http://wiringpi.com/
 
 ***WiringPi Note: The author has discontinued public releases of WiringPi. The last update was 2.52 for the Raspberry Pi 4B.***
